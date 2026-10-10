@@ -13,8 +13,16 @@ public class UserList
         }
     }
 
-    public ArrayList<User> getu(User bob)
+    public User getu(User bob)
     {
-        return u;
+        for (User user : u)
+        {
+            if (user.equals(bob))
+            {
+                return user;
+            }
+        }
+        return null;
     }
-}
+    }
+
