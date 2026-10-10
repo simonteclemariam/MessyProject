@@ -4,7 +4,7 @@ public class User
 {
     private final int c_id;
     private String c_nam;
-    private String address;
+
 
     public User(int i, String n){
         c_id = i;
@@ -24,16 +24,11 @@ public class User
         c_nam = n;
     }
 
-    public void setA(String a)
-    {
-        address=a;
-    }
 
     public int geti(){ return c_id; }
 
     public String getn(){ return c_nam; }
 
-    public String geta(){ return address; }
 
     @Override
     public boolean equals(Object o){
