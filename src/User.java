@@ -8,7 +8,7 @@ public class User
 
     public User(int i, String n){
         c_id = i;
-        if(n.length() < 0 || n.length() > 100) // Testing length
+        if (n == null || n.isEmpty() || n.length() > 100) // Testing length
         {
             return; //If string is invalid, we dont try to store it
         }
